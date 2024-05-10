@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="-2.0" prefHeight="510.0" prefWidth="826.0">
+               <top>
+                  <AnchorPane prefHeight="64.0" prefWidth="826.0" style="-fx-background-color: #0A6847;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fill="WHITE" layoutX="41.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Text>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="446.0" prefWidth="210.0" style="-fx-background-color: #0A6847;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="186.0" fitWidth="179.0" layoutX="21.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/logo__1_-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="34.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Santuário Onça Pintada" wrappingWidth="153.166015625">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-3.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/_palm__tree__bananapalm__green-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="175.0" fitWidth="65.0" layoutX="73.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/_palm__tree__bananapalm__green-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="163.0" fitWidth="112.0" layoutX="110.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/_palm__tree__bananapalm__green-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="25.0" layoutY="46.0" prefHeight="370.0" prefWidth="226.0" style="-fx-background-color: #0A6847;">
+                           <children>
+                              <Text fill="WHITE" layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local para visita">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="14.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data para vista">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField layoutX="14.0" layoutY="104.0" prefHeight="25.0" prefWidth="201.0" />
+                              <TextField layoutX="13.0" layoutY="173.0" prefHeight="25.0" prefWidth="200.0" />
+                              <Text fill="WHITE" layoutX="14.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário para visita">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="14.0" layoutY="295.0" mnemonicParsing="false" text="Adicionar" textFill="#0a6847" />
+                              <Button layoutX="159.0" layoutY="295.0" mnemonicParsing="false" text="Limpar" textFill="#0a6847" />
+                              <Text fill="WHITE" layoutX="14.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da Entrada">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField layoutX="13.0" layoutY="236.0" prefHeight="25.0" prefWidth="201.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextField layoutX="37.0" layoutY="88.0" prefHeight="25.0" prefWidth="202.0" />
+                           </children>
+                        </AnchorPane>
+                        <TableView layoutX="265.0" layoutY="46.0" prefHeight="369.0" prefWidth="303.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="Local" />
+                            <TableColumn prefWidth="75.0" text="Data" />
+                              <TableColumn prefWidth="75.0" text="Horário" />
+                              <TableColumn prefWidth="75.0" text="Valor" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
