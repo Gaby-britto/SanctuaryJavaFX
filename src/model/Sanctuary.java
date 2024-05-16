@@ -2,11 +2,18 @@ package model;
 
 public class Sanctuary {
 	
+	private int id;
 	private String localSantuary;
 	private String dataSanctuary;
 	private String horarioSanctuary;
 	private int valorSanctuary;
 	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getLocalSantuary() {
 		return localSantuary;
 	}
