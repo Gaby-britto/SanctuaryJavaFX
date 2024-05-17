@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SanctuaryController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
@@ -73,26 +73,26 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextField layoutX="14.0" layoutY="104.0" prefHeight="25.0" prefWidth="201.0" />
-                              <TextField layoutX="13.0" layoutY="173.0" prefHeight="25.0" prefWidth="200.0" />
+                              <TextField fx:id="data" layoutX="14.0" layoutY="104.0" prefHeight="25.0" prefWidth="201.0" />
+                              <TextField fx:id="horario" layoutX="13.0" layoutY="173.0" prefHeight="25.0" prefWidth="200.0" />
                               <Text fill="WHITE" layoutX="14.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário para visita">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Button layoutX="14.0" layoutY="295.0" mnemonicParsing="false" text="Adicionar" textFill="#0a6847" />
-                              <Button layoutX="159.0" layoutY="295.0" mnemonicParsing="false" text="Limpar" textFill="#0a6847" />
+                              <Button layoutX="14.0" layoutY="295.0" mnemonicParsing="false" onAction="#adicionar" text="Adicionar" textFill="#0a6847" />
+                              <Button layoutX="159.0" layoutY="295.0" mnemonicParsing="false" onAction="#limpar" text="Limpar" textFill="#0a6847" />
                               <Text fill="WHITE" layoutX="14.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da Entrada">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextField layoutX="13.0" layoutY="236.0" prefHeight="25.0" prefWidth="201.0" />
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <TextField layoutX="37.0" layoutY="88.0" prefHeight="25.0" prefWidth="202.0" />
+                              <TextField fx:id="valor" layoutX="13.0" layoutY="236.0" prefHeight="25.0" prefWidth="201.0" />
+                              <AnchorPane layoutX="-14.0" layoutY="-42.0" prefHeight="113.0" prefWidth="199.0">
+                                 <children>
+                                    <TextField fx:id="local" layoutX="31.0" layoutY="87.0" prefHeight="25.0" prefWidth="202.0" />
+                                 </children>
+                              </AnchorPane>
                            </children>
                         </AnchorPane>
                         <TableView layoutX="265.0" layoutY="46.0" prefHeight="369.0" prefWidth="303.0">
