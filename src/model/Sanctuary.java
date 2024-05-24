@@ -3,7 +3,7 @@ package model;
 public class Sanctuary {
 	
 	private int id;
-	private String localSantuary;
+	private String localSanctuary;
 	private String dataSanctuary;
 	private String horarioSanctuary;
 	private int valorSanctuary;
@@ -14,11 +14,11 @@ public class Sanctuary {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getLocalSantuary() {
-		return localSantuary;
+	public String getLocalSanctuary() {
+		return localSanctuary;
 	}
-	public void setLocalSantuary(String localSantuary) {
-		this.localSantuary = localSantuary;
+	public void setLocalSanctuary(String localSanctuary) {
+		this.localSanctuary = localSanctuary;
 	}
 	public String getDataSanctuary() {
 		return dataSanctuary;

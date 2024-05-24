@@ -63,9 +63,9 @@ public class visitaRepository {
 	private void saveSanctuarys() {
 		try (PrintWriter writer = new PrintWriter(new FileOutputStream(database, false))) {
 			for (Sanctuary sanctuary : sanctuarys) {
-				String data = sanctuary.getId() + ";" + sanctuary.getLocalSantuary() + ";"
+				String data = sanctuary.getId() + ";" 
 						+ sanctuary.getDataSanctuary() + ";" + sanctuary.getHorarioSanctuary() + ";"
-						+ sanctuary.getLocalSantuary() + ";" + sanctuary.getValorSanctuary();
+						+ sanctuary.getLocalSanctuary() + ";" + sanctuary.getValorSanctuary();
 				writer.println(data);
 			}
 		} catch (FileNotFoundException e) {
@@ -93,7 +93,7 @@ public class visitaRepository {
 				if (data.length >= 5) {
 					Sanctuary sanctuary = new Sanctuary();
 					sanctuary.setId(Integer.parseInt(data[0]));
-					sanctuary.setLocalSantuary(data[1]);
+					sanctuary.setLocalSanctuary(data[1]);
 					sanctuary.setDataSanctuary(data[2]);
 					sanctuary.setHorarioSanctuary(data[3]);
 					sanctuary.setValorSanctuary(Integer.parseInt(data[4]));

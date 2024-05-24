@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -23,7 +23,8 @@
                         <Text fill="WHITE" layoutX="41.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
                            <font>
                               <Font name="System Bold" size="25.0" />
-                           </font></Text>
+                           </font>
+                        </Text>
                      </children>
                   </AnchorPane>
                </top>
@@ -61,7 +62,7 @@
                <center>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                      <children>
-                        <AnchorPane layoutX="25.0" layoutY="46.0" prefHeight="370.0" prefWidth="226.0" style="-fx-background-color: #0A6847;">
+                        <AnchorPane fx:id="detailsPane" layoutX="25.0" layoutY="46.0" prefHeight="370.0" prefWidth="226.0" style="-fx-background-color: #0A6847;">
                            <children>
                               <Text fill="WHITE" layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local para visita">
                                  <font>
@@ -73,8 +74,6 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextField fx:id="data" layoutX="14.0" layoutY="104.0" prefHeight="25.0" prefWidth="201.0" />
-                              <TextField fx:id="horario" layoutX="13.0" layoutY="173.0" prefHeight="25.0" prefWidth="200.0" />
                               <Text fill="WHITE" layoutX="14.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário para visita">
                                  <font>
                                     <Font size="14.0" />
@@ -87,21 +86,19 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextField fx:id="valor" layoutX="13.0" layoutY="236.0" prefHeight="25.0" prefWidth="201.0" />
-                              <AnchorPane layoutX="-14.0" layoutY="-42.0" prefHeight="113.0" prefWidth="199.0">
-                                 <children>
-                                    <TextField fx:id="local" layoutX="31.0" layoutY="87.0" prefHeight="25.0" prefWidth="202.0" />
-                                 </children>
-                              </AnchorPane>
+                              <ChoiceBox fx:id="local" layoutX="14.0" layoutY="47.0" prefHeight="25.0" prefWidth="201.0" />
+                              <ChoiceBox fx:id="data" layoutX="14.0" layoutY="112.0" prefHeight="25.0" prefWidth="197.0" />
+                              <ChoiceBox fx:id="horario" layoutX="14.0" layoutY="179.0" prefHeight="25.0" prefWidth="197.0" />
+                              <ChoiceBox fx:id="valor" layoutX="14.0" layoutY="249.0" prefHeight="25.0" prefWidth="196.0" />
                            </children>
                         </AnchorPane>
-                        <TableView fx:id="tableWiew" layoutX="265.0" layoutY="46.0" prefHeight="369.0" prefWidth="303.0">
-                          <columns>
-                            <TableColumn fx:id="cLocal" prefWidth="75.0" text="Local" />
-                            <TableColumn fx:id="cData" prefWidth="75.0" text="Data" />
+                        <TableView fx:id="tableView" layoutX="265.0" layoutY="46.0" prefHeight="369.0" prefWidth="303.0">
+                           <columns>
+                              <TableColumn fx:id="cLocal" prefWidth="75.0" text="Local" />
+                              <TableColumn fx:id="cData" prefWidth="75.0" text="Data" />
                               <TableColumn fx:id="cHorario" prefWidth="75.0" text="Horário" />
                               <TableColumn fx:id="cValor" prefWidth="75.0" text="Valor" />
-                          </columns>
+                           </columns>
                         </TableView>
                      </children>
                   </AnchorPane>
